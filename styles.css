@@ -1,0 +1,1223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* navigation bar */
+.navbar {
+    display: flex;
+    padding: 10px 120px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #015DB2;
+    color:white;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 1000;
+}
+
+.company {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.company a {
+    text-decoration: none;
+}
+
+.navbar-company-name {
+    color: white;
+    text-align: left;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.navbar-company-name:hover {
+    cursor: pointer;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.list a.active {
+    color: #015DB2;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.list a.active:hover {
+    color: white;
+    background-color: navy;
+}
+
+a:hover {
+    color: navy;
+    transition: all 10ms ease-in-out;
+}
+
+/* .signup-button {
+    background-color: white;
+    padding: 0;
+    border: 0 solid;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #015DB2;
+}
+
+.signup-button:hover {
+    background-color: navy;
+    cursor: pointer;
+    color: white;
+} */
+
+/* main content */
+main {
+    padding: 150px 0 0 0;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+/* about-us-section */
+.about-us {
+    padding: 80px 120px 0 120px;
+}
+
+.about-us h2{
+    font-size: 45px; 
+}
+
+.about-us p {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.about-us .ruang-lingkup {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about-us em {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    background: linear-gradient(to right, #349DFF, #015DB2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.list-services {
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    gap: 190px;
+}
+
+.list-services a {
+    color: #333;
+}
+
+.list-services a:hover {
+    color: #015DB2;
+}
+
+.about-us .more-information {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-us button {
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to right, #349DFF, #1577D1);
+    padding: 10px 10px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.about-us button:hover {
+    cursor: pointer;
+    background: #015DB2;
+} 
+
+
+/* about-us-section slideshow-image */
+.container-swipper {
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    justify-content: center;
+    padding: 0 50px 0 50px;
+}
+
+.swiper {
+    border-radius: 30px;
+    border: 2px solid #015DB2;
+    background-color: white;
+    z-index: 0 !important;
+    width: 950px;
+    height: 575px;
+    align-items: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-wrapper {
+    width: 100% !important;
+}
+
+.swiper-slide {
+    padding: 40px 50px 40px 50px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* about-us-section maps */
+.maps {
+    text-align: center;
+    margin: 60px 0 60px 0;
+}
+
+.maps h4 {
+    font-size: 25px;
+    margin: 0 0 20px 0;
+}
+
+.weather-container p{
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+
+/* services-section */
+.services {
+    margin: 80px 0;
+    padding: 10px 0;
+    background-color: rgba(1, 93, 178, 10%);
+    text-align: center;
+}
+
+.services h3 {
+    margin-top: 75px;
+    font-size: 35px;
+    background: linear-gradient(to right, #349DFF, #015DB2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.layanan-satu {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 40px;
+}
+
+.layanan {
+    align-items: center;
+    width: 604px;
+}
+
+.layanan-tiga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layanan .judul-project {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.layanan img {
+    width: 600px;
+    border-radius: 20px;
+}
+
+.detail {
+    text-align: justify;
+}
+
+.detail p {
+    font-size: 16px;
+}
+
+.layanan-dua {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 40px;
+}
+
+.layanan-tiga {
+    margin: 80px 40px 50px 40px;
+}
+
+/* Review and Feedback Section */
+.review-and-feedback {
+    margin: 0 0 80px 0;
+    padding: 0 120px;
+    text-align: center;
+}
+
+.review-and-feedback h3 {
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+.review-and-feedback em {
+    font-style: normal;
+    background: linear-gradient(to right, #349DFF, #015DB2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.feedback {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.feedback-container {
+    background-color: white;
+    border: 2px solid #015DB2;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    text-align: justify;
+}
+
+.feedback-container:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 100ms ease-in-out;
+}
+
+.feedback-container .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.feedback-container .proffesion {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.feedback-container .explain {
+    font-size: 16px;
+}
+
+.star {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0 0 0;
+    gap: 5px;
+}
+
+.feedback-container .fa-star {
+    color: #FFD233;
+    font-size: 25px;
+}
+
+.feedback-form {
+    margin: 80px 0 0 0;
+}
+
+.feedback-form h4 {
+    font-size: 25px;
+}
+
+.feedback-form-container {
+    margin: 30px 100px 0 100px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #015DB2;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-form-container form {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+}
+
+.feedback-form-container label {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.feedback-form-container input[type="text"], input[type="number"] {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.feedback-form-container textarea {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    height: 80px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.feedback-form-container input[type="submit"] {
+    padding: 10px;
+    font-size: 18px;
+    margin: 0 70px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #349DFF, #1577D1);
+    color: white;
+}
+
+.feedback-form-container input[type="submit"]:hover {
+    cursor: pointer;
+    background: #015DB2;
+}
+
+ /* CSS untuk modal pop-up */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: black;
+}
+
+.modal-message {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.success {
+    color: #28a745;
+}
+
+.error {
+    color: #dc3545;
+}
+
+/* section-contact-us */
+.contact {
+    background-color: rgba(1, 93, 178, 10%);
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    padding: 80px 0;
+}
+
+.contact-all-container {
+    border: 2px solid #015DB2;
+    background-color: white;
+    margin: 0px 120px 80px 120px;
+    border-radius: 20px
+}
+
+.contact h3 {
+    font-size: 35px;
+}
+
+.contact-text {
+    margin-top: 50px;
+}
+
+.contact em {
+    font-style: normal;
+    background: linear-gradient(to right, #349DFF, #015DB2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-container {
+    /* border: 2px solid #333; */
+    border-radius: 20px;
+    margin: 60px 120px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.contact-detail a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.contact-detail a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+}
+
+.contact-detail {
+    align-items: center;
+    gap: 5px;
+    display: flex;
+}
+
+.contact-detail .fa-square-whatsapp {
+    color: #32D851;
+    font-size: 50px;
+}
+
+.contact-detail .fa-youtube {
+    color: red;
+    font-size: 45px;
+}
+
+.contact-detail .fa-square-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+}
+
+.contact-detail .fa-envelope {
+    font-size: 40px;
+}
+
+.icon {
+    font-size: 30px !important;
+}
+
+.questions-form h4 {
+    font-size: 25px;
+    margin: 0 0 30px;
+}
+
+.container-questions-form {
+    margin: 30px 220px 0 220px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #015DB2;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.container-questions-form form {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+}
+
+.container-questions-form label {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container-questions-form input[type="text"], input[type="email"] {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container-questions-form textarea {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    height: 80px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container-questions-form input[type="submit"] {
+    padding: 10px;
+    font-size: 18px;
+    margin: 0 70px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #349DFF, #1577D1);
+    color: white;
+}
+
+.container-questions-form input[type="submit"]:hover {
+    cursor: pointer;
+    background: #015DB2;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Existing styles remain the same */
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 10px 60px;
+    }
+
+    .list {
+        gap: 30px;
+    }
+
+    .navbar-company-name {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .about-us {
+        padding: 60px 60px 0 60px;
+    }
+
+    .about-us h2 {
+        font-size: 35px;
+    }
+
+    .about-us p {
+        font-size: 30px;
+    }
+
+    .about-us .ruang-lingkup {
+        font-size: 18px;
+    }
+
+    .list-services {
+        gap: 100px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .list-services ul {
+        margin-bottom: 20px;
+    }
+
+    .container-swipper {
+        padding: 0 30px;
+    }
+
+    .swiper {
+        width: 800px;
+        height: 450px;
+    }
+
+    .maps iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .maps h4 {
+        font-size: 22px;
+    }
+
+    .weather-container p {
+        font-size: 14px;
+    }
+
+    .about-us button {
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .services {
+        padding: 20px 0;
+    }
+
+    .services h3 {
+        font-size: 30px;
+    }
+
+    .layanan-satu, .layanan-dua {
+        flex-direction: column;
+        margin: 40px 20px;
+    }
+
+    .layanan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .layanan img {
+        width: 100%;
+    }
+
+    .detail p {
+        font-size: 14px;
+    }
+
+    .review-and-feedback {
+        padding: 0 20px;
+    }
+
+    .review-and-feedback h3 {
+        font-size: 30px;
+    }
+
+    .feedback {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .feedback-container {
+        padding: 10px;
+    }
+
+    .feedback-container .name {
+        font-size: 16px;
+    }
+
+    .feedback-container .proffesion {
+        font-size: 14px;
+    }
+
+    .feedback-container .explain {
+        font-size: 14px;
+    }
+
+    .feedback-container .fa-star {
+        font-size: 20px;
+    }
+
+    .feedback-form-container {
+        margin: 30px 50px;
+    }
+
+    .feedback-form-container input[type="submit"] {
+        margin: 0 50px;
+    }
+
+    .modal-content {
+        width: 70%; /* Kurangi lebar modal untuk layar lebih kecil */
+        margin: 10% auto; /* Sesuaikan margin */
+    }
+
+    .modal .close {
+        font-size: 1.4em; /* Sesuaikan ukuran font tombol tutup */
+    }
+
+    .modal-message {
+        font-size: 1.1em; /* Sesuaikan ukuran font pesan */
+    }
+
+    .contact-all-container {
+        margin: 0px 80px 80px 80px; /* Kurangi margin */
+    }
+
+    .contact h3 {
+        font-size: 30px; /* Sesuaikan ukuran font */
+    }
+
+    .container-questions-form {
+        margin: 30px 150px 0 150px; /* Kurangi margin untuk layar lebih kecil */
+    }
+
+    .questions-form h4 {
+        font-size: 22px; /* Sesuaikan ukuran font heading */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company {
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+
+    .list {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .list li {
+        margin: 10px 0;
+    }
+
+    .list a {
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 100px 0 0 0;
+    }
+
+    .about-us {
+        padding: 40px 20px 0 20px;
+    }
+
+    .about-us h2 {
+        font-size: 28px;
+        margin: 180px 0 0 0;
+    }
+
+    .about-us p {
+        font-size: 24px;
+    }
+
+    .about-us .ruang-lingkup {
+        font-size: 16px;
+    }
+
+    .list-services {
+        gap: 50px;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .list-services ul {
+        margin-bottom: 15px;
+    }
+
+    .container-swipper {
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 350px;
+    }
+
+    .swiper-slide {
+        padding: 20px;
+    }
+
+    .maps {
+        margin: 40px 0;
+    }
+
+    .maps iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .maps h4 {
+        font-size: 20px;
+    }
+
+    .weather-container p {
+        font-size: 13px;
+    }
+
+    .about-us button {
+        width: 160px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .services {
+        padding: 20px 0;
+        margin: 40px 0;
+    }
+
+    .services h3 {
+        font-size: 25px;
+    }
+
+    .layanan-satu, .layanan-dua {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+    .layanan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .layanan img {
+        width: 100%;
+    }
+
+    .detail p {
+        font-size: 13px;
+    }
+
+    .layanan-tiga {
+        margin: 20px 10px;
+        flex-direction: column;
+    }
+
+    .review-and-feedback {
+        padding: 0 10px;
+    }
+
+    .review-and-feedback h3 {
+        font-size: 25px;
+    }
+
+    .feedback {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback-container {
+        padding: 10px;
+    }
+
+    .feedback-container .name {
+        font-size: 14px;
+    }
+
+    .feedback-container .proffesion {
+        font-size: 12px;
+    }
+
+    .feedback-container .explain {
+        font-size: 12px;
+    }
+
+    .feedback-container .fa-star {
+        font-size: 18px;
+    }
+
+    .feedback-form-container {
+        margin: 30px 20px;
+        padding: 20px;
+    }
+
+    .feedback-form-container input[type="submit"] {
+        margin: 0 20px;
+    }
+
+    .feedback-form-container textarea {
+        height: 60px;
+    }
+
+    .modal-content {
+        width: 95%; /* Lebar modal lebih besar pada layar kecil */
+        margin: 10% auto; /* Margin atas dan bawah lebih besar */
+    }
+
+    .modal .close {
+        font-size: 1.2em; /* Ukuran font tombol tutup lebih kecil */
+    }
+
+    .modal-message {
+        font-size: 0.9em; /* Ukuran font pesan lebih kecil */
+    }
+
+    .contact-all-container {
+        margin: 0px 40px 60px 40px; /* Lebih sempit pada layar lebih kecil */
+    }
+
+    .contact h3 {
+        font-size: 28px; /* Ukuran font lebih kecil */
+    }
+
+    .contact-text {
+        margin-top: 40px; /* Sesuaikan margin */
+    }
+
+    .container-questions-form {
+        margin: 30px 80px 0 80px; /* Lebih sempit pada layar lebih kecil */
+        padding: 20px;
+    }
+
+    .questions-form h4 {
+        font-size: 20px;
+    }
+
+    .container-questions-form input[type="submit"] {
+        margin: 0 50px; /* Kurangi margin untuk tombol submit */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-company-name {
+        font-size: 18px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .list a {
+        font-size: 14px;
+    }
+
+    .about-us {
+        padding: 20px 10px 0 10px;
+    }
+
+    .about-us h2 {
+        font-size: 22px;
+    }
+
+    .about-us p {
+        font-size: 20px;
+    }
+
+    .about-us .ruang-lingkup {
+        font-size: 14px;
+    }
+
+    .list-services {
+        gap: 30px;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .list-services ul {
+        margin-bottom: 10px;
+    }
+
+    .swiper {
+        height: 250px;
+    }
+
+    .swiper-slide {
+        padding: 10px;
+    }
+
+    .maps {
+        margin: 20px 0;
+    }
+
+    .maps iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .maps h4 {
+        font-size: 18px;
+    }
+
+    .weather-container p {
+        font-size: 12px;
+    }
+
+    .about-us button {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .services {
+        padding: 10px 0;
+        margin: 20px 0;
+    }
+
+    .services h3 {
+        font-size: 20px;
+    }
+
+    .layanan-satu, .layanan-dua {
+        flex-direction: column;
+        margin: 10px 5px;
+    }
+
+    .layanan {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .layanan img {
+        width: 100%;
+        height: auto;
+    }
+
+    .detail p {
+        font-size: 12px;
+    }
+
+    .layanan-tiga {
+        margin: 10px 5px;
+        flex-direction: column;
+    }
+
+    .review-and-feedback {
+        padding: 0 5px;
+    }
+
+    .review-and-feedback h3 {
+        font-size: 20px;
+    }
+
+    .feedback-container {
+        padding: 5px;
+    }
+
+    .feedback-container .name {
+        font-size: 12px;
+    }
+
+    .feedback-container .proffesion {
+        font-size: 10px;
+    }
+
+    .feedback-container .explain {
+        font-size: 10px;
+    }
+
+    .feedback-container .fa-star {
+        font-size: 15px;
+    }
+
+    .feedback-form-container {
+        margin: 30px 10px;
+        padding: 15px;
+    }
+
+    .feedback-form-container input[type="submit"] {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .feedback-form-container textarea {
+        height: 50px;
+    }
+
+    .modal-content {
+        width: 100%; /* Lebar modal penuh pada layar sangat kecil */
+        margin: 20% auto; /* Margin lebih besar pada layar sangat kecil */
+        padding: 15px; /* Padding lebih kecil pada layar sangat kecil */
+    }
+
+    .modal .close {
+        font-size: 1em; /* Ukuran font tombol tutup lebih kecil */
+    }
+
+    .modal-message {
+        font-size: 0.8em; /* Ukuran font pesan lebih kecil */
+    }
+
+    .contact-all-container {
+        margin: 0px 20px 40px 20px; /* Sesuaikan margin untuk layar sangat kecil */
+        padding: 15px; /* Kurangi padding untuk layar kecil */
+    }
+
+    .contact h3 {
+        font-size: 24px; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+
+    .contact-text {
+        margin-top: 30px;
+    }
+
+    .contact {
+        padding: 60px 0; /* Kurangi padding di sekitar section contact */
+    }
+
+    .container-questions-form {
+        margin: 20px 20px 0 20px; /* Margin lebih kecil untuk layar sangat kecil */
+        padding: 15px;
+    }
+
+    .questions-form h4 {
+        font-size: 18px; /* Ukuran font lebih kecil */
+    }
+
+    .container-questions-form label {
+        font-size: 14px; /* Kurangi ukuran font label */
+    }
+
+    .container-questions-form input[type="text"], 
+    .container-questions-form input[type="email"], 
+    .container-questions-form textarea {
+        font-size: 14px; /* Sesuaikan ukuran font untuk input */
+    }
+
+    .container-questions-form input[type="submit"] {
+        margin: 0 30px; /* Margin tombol lebih kecil */
+    }
+}
